@@ -2,7 +2,7 @@
  * Globals
  */
 
-* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+* { font-family: 'SpoqaHanSans', sans-serif; }
 
 p, li { line-height: 1.8; }
 /* Links */
