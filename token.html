@@ -80,15 +80,17 @@ html_class: white token
   </div>
 </div>
 <script>
-  $('.row-hero ul li').each(function(k, e) {
-    $(e).html(twemoji.parse($(e).html()));
-  });
-  $(window).scroll(function() {
-    if ($(window).width() >= 720 && window.pageYOffset  >= 440) {
-      $('.token-dist-chart').css('margin-top', window.pageYOffset - 440);
-    }
-    else {
-      $('.token-dist-chart').css('margin-top', 'auto');
-    }
+  $(function() {
+    $('.row-hero ul li').each(function(k, e) {
+      $(e).html(twemoji.parse($(e).html()));
+    });
+    $(window).scroll(function() {
+      if ($(window).width() >= 720 && window.pageYOffset  >= 440) {
+        $('.token-dist-chart').css('margin-top', window.pageYOffset - 440);
+      }
+      else {
+        $('.token-dist-chart').css('margin-top', 'auto');
+      }
+    });
   });
 </script>
