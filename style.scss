@@ -1,0 +1,316 @@
+---
+---
+
+@import './open-color.scss';
+
+$color-dawn-0: #5a6f91;
+$color-dawn-1: #45546d;
+
+
+/*
+ * Globals
+ */
+
+* { font-family: 'SpoqaHanSans', sans-serif; }
+
+p, li { line-height: 1.8; }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: white;
+}
+
+/* Custom default button */
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: $oc-blue-7;
+}
+
+
+/*
+ * Home
+ */
+
+.home {
+  .btn-secondary,
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    color: $color-dawn-0;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: white;
+    border: .05rem solid white;
+  }
+
+  .btn-secondary:not(:disabled):not(.disabled):active,
+  .btn-secondary:active {
+    color: white;
+    text-shadow: none;
+    background-color: $color-dawn-1;
+    border: .05rem solid $color-dawn-1;
+    box-shadow: $color-dawn-1;
+  }
+
+  & body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .cover-container {
+    width: 100%;
+  }
+
+  /*
+   * Cover
+   */
+  .cover {
+    padding: 0 1.5rem;
+  }
+  .cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+  }
+
+  .cover-heading {
+      font-family: 'Fredericka the Great', cursive;
+
+  }
+
+  .main-footer-links li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.home, .home body {
+  height: 100%;
+  background-color: $color-dawn-0;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  font-family: 'Fredericka the Great', cursive;
+  margin-bottom: 0;
+  display: none;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: white;
+  border-bottom-color: white;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+    display: block;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * white
+ */
+
+.white, .white body {
+  background-color: white;
+  color: $oc-gray-7;
+}
+
+.white {
+  .masthead-brand,
+  .nav-masthead .nav-link {
+    color: $oc-gray-7;
+  }
+
+  .nav-masthead .active {
+    color: $oc-gray-7;
+    border-bottom-color: $oc-gray-7;
+  }
+
+  hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  a.mail {
+    color: $oc-gray-7;
+    font-weight: bold;
+  }
+}
+
+
+/*
+ * Features
+ */
+
+.features {
+  .hero {
+    margin-top: 80px;
+    width: 90%;
+  }
+
+  @media (min-width: 48em) {
+    .hero {
+      width: 80%;
+    }
+  }
+
+  img {
+    margin-bottom: 60px;
+  }
+  .row-hash-random {
+    .hash-random {
+      width: 80%;
+      font-size: 60px;
+      margin: auto;
+      margin-bottom: 60px;
+
+      .hash  { color: $oc-gray-5; }
+      .arrow { color: $oc-gray-6; }
+      .dice  { color: $oc-gray-7; }
+    }
+
+    h2 {
+      margin-top: 16px;
+    }
+  }
+
+  .img-section {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+
+/*
+ * Play
+ */
+
+.play {
+  .row-hero img {
+    margin-top: 62px;
+    box-shadow: 2px 2px 10px 2px #ddd;
+    max-width: 480px;
+    width: 80%;
+    margin-bottom: 62px;
+  }
+
+  .row-moves {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .emoji {
+    width: 26px;
+  }
+
+}
+
+
+/*
+ * Token
+ */
+
+.token {
+  .row-hero {
+    ul {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .emoji {
+      width: 14px;
+      margin-top: -4px;
+    }
+
+    h2 {
+      margin-top: 80px;
+    }
+  }
+
+  .token-dist-chart {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .token-method {
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    &.sales span   { color: $oc-pink-5; }
+    &.team span    { color: $oc-grape-5; }
+    &.network span { color: $oc-indigo-5; }
+  }
+
+  small {
+    color: $oc-gray-6;
+  }
+
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.main-footer {
+  background-color: $oc-gray-8;
+  margin-top: 80px;
+}
+
+.main-footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+
+  }
+}
