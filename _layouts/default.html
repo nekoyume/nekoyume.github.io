@@ -44,8 +44,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
-      $('h3').each(function(k, e) {
+      $('h3, .token .row-hero ul li').each(function(k, e) {
         $(e).html(twemoji.parse($(e).html()));
+      });
+
+      $(window).scroll(function() {
+        if ($(window).width() >= 720 && window.pageYOffset  >= 440) {
+          $('.token-dist-chart').css('margin-top', window.pageYOffset - 440);
+        }
+        else {
+          $('.token-dist-chart').css('margin-top', 'auto');
+        }
       });
     </script>
   </body>

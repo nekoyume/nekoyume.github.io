@@ -79,18 +79,3 @@ html_class: white token
     <small>1: 총 발행량은 4번의 반감기를 포함한 20년간의 발행량을 나타낸 것이며, 2038년 이후에는 블록 보상이 1로 고정되어 연간 약 0.5%의 인플레이션이 발생합니다.</small>
   </div>
 </div>
-<script>
-  $(function() {
-    $('.row-hero ul li').each(function(k, e) {
-      $(e).html(twemoji.parse($(e).html()));
-    });
-    $(window).scroll(function() {
-      if ($(window).width() >= 720 && window.pageYOffset  >= 440) {
-        $('.token-dist-chart').css('margin-top', window.pageYOffset - 440);
-      }
-      else {
-        $('.token-dist-chart').css('margin-top', 'auto');
-      }
-    });
-  });
-</script>
