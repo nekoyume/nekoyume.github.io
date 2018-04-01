@@ -13,6 +13,9 @@ html_class: white token
       <li>🤓 아이템 합성을 통한 <u>귀중품</u> 획득</li>
       <li>🤝 아이템 거래를 통한 <u>다양한 아이템</u> 수집</li>
     </ul>
+    <div class="hero-email-form">
+      {% include email_form.html %}
+    </div>
   </div>
 </div>
 <hr>
@@ -24,16 +27,6 @@ html_class: white token
     <h2>골드는 어떻게 얻나요?</h2>
     <h3 class="token-method sales"><span>●</span> 2018년 4월 골드 판매에 참여하기</h3>
     <p>다가오는 2018년 4월에 메인넷에서 사용할 수 있는 네코유메 골드(NYG)를 이더리움 ERC20 토큰 형태로 판매할 예정입니다. 총 발행량<sup>1</sup>의 21%를 판매할 예정이며, 이는 메인넷 런칭 이후 가장 먼저 사용할 수 있는 방법입니다.</p>
-    <p>토큰 판매 일정에 대해 소식을 전달받고 싶으시다면, 하단 양식에 이메일 주소를 입력해주세요.</p>
-    <form action="https://nekoyu.us12.list-manage.com/subscribe/post?u=199c8e032eb7e1922b17ddbed&amp;id=b29539c3e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="토큰 판매 정보를 받을 이메일 주소를 입력해주세요." aria-label="이메일 주소를 입력해주세요." aria-describedby="basic-addon2" name="EMAIL">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="submit">등록</button>
-          </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_199c8e032eb7e1922b17ddbed_b29539c3e3" tabindex="-1" value=""></div>
-      </div>
-    </form>
     <h3 class="token-method team"><span>●</span> 코어팀에 합류하기</h3>
     <p>향후 1년의 집중 개발 기간동안 코어팀에 참여하시는 분들께 예약된 9%의 골드를 기여량에 비례하여 분배할 예정입니다. 어느 방향으로든 개발에 도움이 되실 수 있으신 분들은 <a class="mail" href="mailto:jc@nekoyu.me">jc@nekoyu.me</a>로 지원 신청을 해주시거나, 오픈된 이슈에 대한 Pull Request를 보내주시기 바랍니다.</p>
 
@@ -76,6 +69,8 @@ html_class: white token
         </tr>
       </tbody>
     </table>
+    <p>토큰 판매 일정에 대해 소식을 전달받고 싶으시다면, 하단 양식에 이메일 주소를 입력해주세요.</p>
+    {% include email_form.html %}
     <small>1: 총 발행량은 4번의 반감기를 포함한 20년간의 발행량을 나타낸 것이며, 2038년 이후에는 블록 보상이 1로 고정되어 연간 약 0.5%의 인플레이션이 발생합니다.</small>
   </div>
 </div>

@@ -270,6 +270,18 @@ video.demo {
       }
     }
 
+    .hero-email-form {
+      width: 480px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    @media (max-width: 48em) {
+      .hero-email-form {
+        width: 80%;
+      }
+    }
+
     .emoji {
       width: 14px;
       margin-top: -4px;
