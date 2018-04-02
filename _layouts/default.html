@@ -49,7 +49,9 @@
 
       $(window).scroll(function() {
         if ($(window).width() >= 720 && window.pageYOffset  >= 440) {
-          $('.token-dist-chart').css('margin-top', window.pageYOffset - 440);
+          $('.token-dist-chart').css('margin-top',
+                                     Math.min(window.pageYOffset - 440,
+                                              840));
         }
         else {
           $('.token-dist-chart').css('margin-top', 'auto');
