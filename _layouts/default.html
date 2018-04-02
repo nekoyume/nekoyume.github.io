@@ -10,16 +10,16 @@
     <!-- End Google Tag Manager -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>{{ page.title }} {% if page.title %}::{% endif %} Nekøyume</title>
+    <title>{{ page.title }}{% if page.title %} :: {% endif %}{{ site.title }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url"                content="https://nekoyu.me/" />
+    <meta property="og:url"                content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Nekøyume – Decentralized Fantasy Role-playing Game" />
+    <meta property="og:title"              content="{{ site.title }}" />
     {% if page.ko %}
     <meta property="og:description"        content="처음 만나보는 블록체인 기반 판타지 롤플레잉 게임. 2018년 4월 프리뷰넷 소스코드 공개 예정." />
     {% else %}
-    <meta property="og:description"        content="First Fantasy Role-playing Game based on Blockchain. Preview network source code will be released in April 2018." />
+    <meta property="og:description"        content="{{ site.description }}" />
     {% endif %}
     <meta property="og:image"              content="https://nekoyu.me/images/og.jpg" />
     <meta property="fb:app_id"             content="767878560069222" />
