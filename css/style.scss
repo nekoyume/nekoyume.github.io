@@ -35,11 +35,18 @@ a:hover {
 
 video.demo {
   width: 480px;
+  height: auto;
+  background: url(/images/demo.jpg);
+  background-size: cover;
 }
 
 @media (max-width: 48em) {
   video.demo {
     width: 90%;
+  }
+
+  .nav-home {
+    display: none;
   }
 }
 
@@ -270,6 +277,18 @@ video.demo {
       }
     }
 
+    .hero-email-form {
+      width: 480px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    @media (max-width: 48em) {
+      .hero-email-form {
+        width: 80%;
+      }
+    }
+
     .emoji {
       width: 14px;
       margin-top: -4px;
@@ -289,9 +308,9 @@ video.demo {
     margin-top: 50px;
     margin-bottom: 20px;
 
-    &.sales span   { color: $oc-pink-5; }
-    &.team span    { color: $oc-grape-5; }
-    &.network span { color: $oc-indigo-5; }
+    &.sales .circle   { color: $oc-pink-5; }
+    &.team .circle    { color: $oc-grape-5; }
+    &.network .circle { color: $oc-indigo-5; }
   }
 
   small {
