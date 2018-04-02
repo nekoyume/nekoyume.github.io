@@ -35,6 +35,9 @@ a:hover {
 
 video.demo {
   width: 480px;
+  height: auto;
+  background: url(/images/demo.jpg);
+  background-size: cover;
 }
 
 @media (max-width: 48em) {
@@ -301,9 +304,9 @@ video.demo {
     margin-top: 50px;
     margin-bottom: 20px;
 
-    &.sales span   { color: $oc-pink-5; }
-    &.team span    { color: $oc-grape-5; }
-    &.network span { color: $oc-indigo-5; }
+    &.sales .circle   { color: $oc-pink-5; }
+    &.team .circle    { color: $oc-grape-5; }
+    &.network .circle { color: $oc-indigo-5; }
   }
 
   small {
