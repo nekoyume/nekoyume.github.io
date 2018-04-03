@@ -38,6 +38,7 @@ video.demo {
   height: auto;
   background: url(/images/demo.jpg);
   background-size: cover;
+  box-shadow: 0px 2px 4px 4px $color-dawn-1;
 }
 
 @media (max-width: 48em) {
@@ -47,6 +48,13 @@ video.demo {
 
   .nav-home {
     display: none;
+  }
+
+  .nav-masthead .nav-link + .nav-link {
+    margin-left: 0.5rem !important;
+  }
+  .nav-masthead .nav-link {
+    margin-right: 0.5rem;
   }
 }
 
@@ -109,6 +117,8 @@ video.demo {
 .home, .home body {
   height: 100%;
   background-color: $color-dawn-0;
+  background: linear-gradient(to bottom right, $color-dawn-0, $color-dawn-1);
+
 }
 
 
