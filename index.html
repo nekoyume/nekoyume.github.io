@@ -1,48 +1,222 @@
 ---
 layout: default
-html_class: home
-body_class: text-center
+html_class: white one
 ---
-
-<div class="container">
-  <div class="row" style="height:100%">
-    <div class="col-12">
-      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-              <h3 class="masthead-brand hidden-sm">Nekøyume</h3>
-              <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-home nav-link active" href="index">Home</a>
-                <a class="nav-link" href="features">Features</a>
-                <a class="nav-link" href="play">Play</a>
-                <a class="nav-link" href="token">Token</a>
-                <a class="nav-link" href="/ko/">KO</a>
-                <a class="nav-link active" href="/">EN</a>
-              </nav>
-            </div>
-        </header>
-        <main role="main" class="inner cover">
-          <h1 class="cover-heading">Nekøyume</h1>
-          <video class="demo" autoplay muted playsinline loop>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+              <div class="inner">
+                <h3 class="masthead-brand hidden-sm">Nekøyume</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                  <a class="nav-link {{ page.ko }}" href="/ko/">KO</a>
+                  <a class="nav-link {{ page.en }} active" href="/">EN</a>
+                </nav>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div class="row row-hero">
+        <div class="col-12 text-center">
+          <video class="hero" autoplay muted playsinline loop>
             <source src="/videos/demo.mp4" type="video/mp4">
             <source src="/videos/demo.webm" type="video/webm">
             Your browser does not support the video tag.
           </video>
-          <p class="lead">First Fantasy Role-playing Game <br class="d-block d-sm-none">based on Blockchain</p>
-          <p class="lead">
-            <a href="features" class="btn btn-lg btn-secondary">Learn more</a>
-          </p>
-        </main>
-
-        <footer class="mastfoot mt-auto">
-          <div class="inner">
-            <ul class="main-footer-links">
-              <li><a href="https://github.com/nekoyume">GitHub</a></li>
-              <li><a href="https://t.me/nekoyume">Telegram</a></li>
-            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="dawn-stripe-start"></div>
+    <div class="wrapper" style="background-color: #5a6f91;">
+      <div class="container">
+        <div class="row row-hero">
+          <div class="col-12 text-center">
+            <h2 style="color: white; margin-top:40px; margin-bottom: 30px;">First Fantasy Role-playing Game<br>based on Blockchain</h2>
+            <p style="color: white;">If you would like to receive news about the token sales schedule,<br class="d-none d-lg-block">please enter your E-mail address in the form below.</p>
+            <div class="hero-email-form">
+              {% include email_form.html %}
+            </div>
           </div>
-        </footer>
+        </div>
+      </div>
+    </div>
+    <div class="dawn-stripe-end"></div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="row row-hero">
+        <div class="col-12 text-center">
+          <img class="hero" src="/images/hero.jpg" alt="Blockchain for Adventure">
+          <h2>Adventures in the blockchain.</h2>
+          <p>Nekoyume has included players’ action information in a blockchain <br class="d-none d-lg-block">to implement fantasy role-playing in a decentralized environment.<br class="d-none d-lg-block">When players hunt monsters, sleep, or give gifts to other players, this information is securely shared in a blockchain.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-hash-random">
+        <div class="col-md-6 col-sm-12 img-section">
+          <table class="hash-random">
+            <tbody>
+              <tr class="hash">
+                <td>49</td>
+                <td>F7</td>
+                <td>0A</td>
+              </tr>
+              <tr class="arrow">
+                <td>⇣</td>
+                <td>⇣</td>
+                <td>⇣</td>
+              </tr>
+              <tr class="dice">
+                <td>⚀</td>
+                <td>⚃</td>
+                <td>⚂</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>Technology to determine fate, <br>Hash Random</h2>
+          <p>Nekoyume devised a random consensus called  <b> Hash random </b> to create a dynamic situation within the blockchain. A combination of hashes taken from blocks creates an algorithm that is hard to predict and ensures a deterministic outcome.</p>
+          <a href="docs/white_paper.pdf" class="btn btn-lg btn-primary">See white paper</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-dungeon-world">
+        <div class="col-md-6 col-sm-12 img-section">
+          <img src="/images/dw.jpeg" alt="Dungeon World" width="80%">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>Simple and profound play based on Dungeon World</h2>
+          <p>Nekoyume is a fantasy role-playing game based on Dungeon World. This rule, designed by Sage LaTorra and Adam Koebel, inherits the strengths of Apocalypse World and Dungeons &amp; Dragons.</p>
+          <a href="https://www.dungeonworldsrd.com/" class="btn btn-lg btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="play">
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>What can I do?</h2>
+        </div>
+      </div>
+      <div class="row row-moves">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>⚔ Fight</h3>
+          <p>You encounter a nearby monster and battle it. A result over 10 is a big success; if it is between 7 and 9, you will be counterattacked by the enemy. If you get 6 or less, something will go wrong.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>💤 Sleep</h3>
+          <p>Fall asleep in your bed and regain your hit point. If you are seriously wounded by an enemy, you can fight again after recovering your hit points by sleeping. If you are lucky, you might have a memorable dream.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>🗣 Say</h3>
+          <p>You can talk to players who is following you. If you leave something important, that story will be addressed by others. </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>➡ Send</h3>
+          <p>You can pass on your items to other players. You can change your bandages to keep your colleagues from injury, or you can trade items for gold. Trading is the key to growth!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>❉ <u>Preview network source code</u> will be released in April 2018!</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+  <div class="section token">
+    <div class="container">
+      <div class="row row-hero">
+        <div class="col-12 text-center">
+          <h2>Players can grow bigger with Gold.</h2>
+          <ul>
+            <li>🔼 Obtain <u>a status bonus</u> proportional to the amount held</li>
+            <li>🤓 Obtain <u> valuable items </u> through composition</li>
+            <li>🤝 Collect <u> various items </u> through trading</li>
+          </ul>
+          <div class="hero-email-form">
+            {% include email_form.html %}
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-moves">
+        <div class="col-md-5 col-xs-12 text-center">
+          <img src="/images/token_distribution.png" class="token-dist-chart">
+        </div>
+        <div class="col-md-7 col-xs-12">
+          <h2>How can I earn Gold?</h2>
+          <h3 class="token-method sales"><span class="circle">●</span> Buy gold at the Token Sales Event in May</h3>
+          <p>In May 2018, Nekoyume Gold (NYG), which is available on the mainnet, will be sold in the form of the Ethereum ERC20 token. We will sell 21% of the total volume.<sup>1</sup></p>
+          <h3 class="token-method team"><span class="circle">●</span> Participate in the core team</h3>
+          <p>During the intensive development period over the next year, 9% of the gold reserves will be distributed to the core team members in proportion to their contribution amounts. If you can help with development in any direction, please apply for support at <a class="mail" href="mailto:jc@nekoyu.me">jc@nekoyu.me</a> or send a Pull Request for the opened issue.</p>
+
+          <h3 class="token-method network"><span class="circle">●</span> Participate in the network</h3>
+          <p>After launching the mainnet, you can obtain gold by providing a client based on the published code or creating a block by executing <code>$ neko</code>. It will be the largest of all rewards portions and will be the only way to earn Gold from 2019 on. The planned amounts over four years are as follows.</p>
+
+          <table class="table text-right">
+            <thead>
+              <tr>
+                <th>Miner &amp; client incentive / 4y</th>
+                <th>Reward</th>
+                <th>Starting Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>134,553,600</td>
+                <td>16</td>
+                <td>2018</td>
+              </tr>
+              <tr>
+                <td>67,276,800</td>
+                <td>8</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <td>33,638,400</td>
+                <td>4</td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <td>16,819,200</td>
+                <td>2</td>
+                <td>2030</td>
+              </tr>
+              <tr>
+                <td>8,409,600</td>
+                <td>1</td>
+                <td>2034</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>If you would like to receive news about the token sales schedule, please enter your E-mail address in the form below.</p>
+          {% include email_form.html %}
+          <small>1: Total volume represents the 20-year volume including four half-lives. After 2038, block reward will be fixed at 1, resulting in inflation of about 0.5% per year.</small>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</main>
+<footer class="main-footer text-muted">
+  <div class="container p-3 p-md-5">
+    <div class="row">
+      <div class="col-12">
+        <ul class="main-footer-links">
+          <li><a href="https://github.com/nekoyume">GitHub</a></li>
+          <li><a href="https://t.me/nekoyume">Telegram</a></li>
+          <li><a href="docs/white_paper.pdf">White Paper</a></li>
+        </ul>
+        <p>Maintained by the <a href="https://github.com/orgs/nekoyume/people">core team</a>.</p>
+        <p>Code licensed <a href="https://github.com/nekoyume/nekoyume/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>

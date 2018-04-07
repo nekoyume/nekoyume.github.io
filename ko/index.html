@@ -1,50 +1,222 @@
 ---
 layout: default
-html_class: home
-body_class: text-center
-ko: active
+html_class: white one
 ---
-
-<div class="container">
-  <div class="row" style="height:100%">
-    <div class="col-12">
-      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-              <h3 class="masthead-brand hidden-sm">Nekøyume</h3>
-              <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link nav-home active" href="/">Home</a>
-                <a class="nav-link" href="features">Features</a>
-                <a class="nav-link" href="play">Play</a>
-                <a class="nav-link" href="token">Token</a>
-                <a class="nav-link active" href="/ko/">KO</a>
-                <a class="nav-link" href="/">EN</a>
-
-              </nav>
-            </div>
-        </header>
-        <main role="main" class="inner cover">
-          <h1 class="cover-heading">Nekøyume</h1>
-          <video class="demo" autoplay muted playsinline loop>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+              <div class="inner">
+                <h3 class="masthead-brand hidden-sm">Nekøyume</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                  <a class="nav-link {{ page.ko }} active" href="/ko/">KO</a>
+                  <a class="nav-link {{ page.en }}" href="/">EN</a>
+                </nav>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div class="row row-hero">
+        <div class="col-12 text-center">
+          <video class="hero" autoplay muted playsinline loop>
             <source src="/videos/demo_ko.mp4" type="video/mp4">
             <source src="/videos/demo_ko.webm" type="video/webm">
-            Your browser does not support the video tag.
+            브라우저가 비디오 태그를 지원하지 않습니다.
           </video>
-          <p class="lead">처음 만나보는 블록체인 기반 <br class="d-block d-sm-none">판타지 롤플레잉 게임</p>
-          <p class="lead">
-            <a href="features" class="btn btn-lg btn-secondary">자세히 보기</a>
-          </p>
-        </main>
-
-        <footer class="mastfoot mt-auto">
-          <div class="inner">
-            <ul class="main-footer-links">
-              <li><a href="https://github.com/nekoyume">GitHub</a></li>
-              <li><a href="https://t.me/nekoyume">Telegram</a></li>
-            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="dawn-stripe-start"></div>
+    <div class="wrapper" style="background-color: #5a6f91;">
+      <div class="container">
+        <div class="row row-hero">
+          <div class="col-12 text-center">
+            <h2 style="color: white; margin-top:40px; margin-bottom: 30px;">처음 만나보는 블록체인 기반<br>판타지 롤플레잉 게임</h2>
+            <p style="color: white;">토큰 판매 일정에 대해 소식을 전달받고 싶으시다면,<br class="d-none d-lg-block">하단 양식에 이메일 주소를 입력해주세요.</p>
+            <div class="hero-email-form">
+              {% include email_form_ko.html %}
+            </div>
           </div>
-        </footer>
+        </div>
+      </div>
+    </div>
+    <div class="dawn-stripe-end"></div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="row row-hero">
+        <div class="col-12 text-center">
+          <img class="hero" src="/images/hero.jpg" alt="Blockchain for Adventure">
+          <h2>블록체인에 모험을 담다.</h2>
+          <p>네코유메는 분산화된 환경에서의 판타지 롤플레잉을 구현하기 위해, 블록체인에 플레이어의 행동 정보를 담았습니다. <br class="d-none d-lg-block"> 플레이어가 괴물을 사냥하거나, 잠을 자거나, 누군가에게 선물을 줄 때 이 정보들이 블록체인에 담겨 안전하게 공유됩니다.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-hash-random">
+        <div class="col-md-6 col-sm-12 img-section">
+          <table class="hash-random">
+            <tbody>
+              <tr class="hash">
+                <td>49</td>
+                <td>F7</td>
+                <td>0A</td>
+              </tr>
+              <tr class="arrow">
+                <td>⇣</td>
+                <td>⇣</td>
+                <td>⇣</td>
+              </tr>
+              <tr class="dice">
+                <td>⚀</td>
+                <td>⚃</td>
+                <td>⚂</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>운명을 결정하는 기술,<br>해시 랜덤</h2>
+          <p>네코유메는 블록체인 상에서 다이나믹한 상황 전개를 만들기 위해, <b>해시 랜덤</b>이라는 랜덤 컨센서스를 고안하였습니다. 블록에 주어지는 해시의 조합으로 예상하기 어려우며 결정적인 결과를 보장하는 알고리즘입니다.</p>
+          <a href="/docs/white_paper_ko.pdf" class="btn btn-lg btn-primary">백서 읽어보기</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-dungeon-world">
+        <div class="col-md-6 col-sm-12 img-section">
+          <img src="/images/dw_ko.jpeg" alt="Dungeon World" width="80%">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>던전월드 규칙에 기반한,<br>간결하며 깊이 있는 게임성</h2>
+          <p>네코유메는 TRPG 룰인 던전월드에 기반하여 만든 판타지 롤플레잉 게임입니다. 세이지 라토라와 아담 코벌이 디자인한 이 규칙은 아포칼립스 월드와 던전앤 드래곤의 장점을 계승하였습니다.</p>
+          <a href="https://sites.google.com/site/dungeonworldkr/home" class="btn btn-lg btn-primary">던전월드 알아보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="play">
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>어떤 행동을 <br class="d-block d-sm-none"> 할 수 있을까요?</h2>
+        </div>
+      </div>
+      <div class="row row-moves">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>⚔ 접근전</h3>
+          <p>인근의 괴물과 조우하여 전투를 벌입니다. 공격시 판정을 통해 10 이상이 나오면 크게 성공, 7~9 사이가 나오면 적의 반격을 받습니다. 6 이하가 나온다면 뭔가 일이 잘못될 것입니다.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>💤 수면</h3>
+          <p>자신의 침대에서 수면을 취하여 체력을 회복합니다. 적에게 큰 부상을 입었다면 수면을 통한 체력 회복 후 다시 전투에 임할 수 있습니다. 만일 운이 좋다면 기억에 남을만 한 꿈을 꿀 수도 있습니다.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>🗣 말하기</h3>
+          <p>말을 하여 자신을 팔로우하고 있는 플레이어에게 정보를 전달할 수 있습니다. 중요한 말을 남긴다면 두고두고 회자되기도 합니다. </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>➡ 전달</h3>
+          <p>자신이 보유한 물건을 다른 플레이어에게 전달할 수 있습니다. 붕대를 교환해서 동료가 다치지 않게 지켜줄 수도 있고, 골드를 전달해 거래를 진행할 수도 있습니다. 거래가 성장의 핵심입니다!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>❉ 2018년 4월 <u>프리뷰넷 소스 코드</u> 공개 예정!</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+  <div class="section token">
+    <div class="container">
+      <div class="row row-hero">
+        <div class="col-12 text-center">
+          <h2>골드로 플레이어는 더 크게 성장할 수 있습니다.</h2>
+          <ul>
+            <li>🔼 보유량에 비례한 <u>능력치 보너스</u> 획득</li>
+            <li>🤓 아이템 합성을 통한 <u>귀중품</u> 획득</li>
+            <li>🤝 아이템 거래를 통한 <u>다양한 아이템</u> 수집</li>
+          </ul>
+          <div class="hero-email-form">
+            {% include email_form_ko.html %}
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-moves">
+        <div class="col-md-5 col-xs-12 text-center">
+          <img src="/images/token_distribution.png" class="token-dist-chart">
+        </div>
+        <div class="col-md-7 col-xs-12">
+          <h2>골드는 어떻게 얻나요?</h2>
+          <h3 class="token-method sales"><span class="circle">●</span> 5월 골드 판매에 참여하기</h3>
+          <p>다가오는 2018년 5월에 메인넷에서 사용할 수 있는 네코유메 골드(NYG)를 이더리움 ERC20 토큰 형태로 판매할 예정입니다. 총 발행량<sup>1</sup>의 21%를 판매할 예정이며, 이는 메인넷 런칭 이후 가장 먼저 사용할 수 있는 방법입니다.</p>
+          <h3 class="token-method team"><span class="circle">●</span> 코어팀에 합류하기</h3>
+          <p>향후 1년의 집중 개발 기간동안 코어팀에 참여하시는 분들께 예약된 9%의 골드를 기여량에 비례하여 분배할 예정입니다. 어느 방향으로든 개발에 도움이 되실 수 있으신 분들은 <a class="mail" href="mailto:jc@nekoyu.me">jc@nekoyu.me</a>로 지원 신청을 해주시거나, 오픈된 이슈에 대한 Pull Request를 보내주시기 바랍니다.</p>
+
+          <h3 class="token-method network"><span class="circle">●</span> 네트워크에 참여하기</h3>
+          <p>메인넷 런칭 이후, 공개된 코드를 바탕으로 플레이어에게 클라이언트를 제공하거나, <code>$ neko</code> 를 실행시켜 블록을 생성하면 이에 맞는 보상을 얻을 수 있습니다. 전체 보상 비중중 가장 큰 규모를 차지하며, 2019년부터 골드를 얻을 수 있는 유일한 방법이 될 예정입니다. 4년간 발행 예정량은 아래와 같습니다.</p>
+
+          <table class="table text-right">
+            <thead>
+              <tr>
+                <th>4년 발행 예정량</th>
+                <th>블록 보상</th>
+                <th>시작 예정 년도</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>134,553,600</td>
+                <td>16</td>
+                <td>2018</td>
+              </tr>
+              <tr>
+                <td>67,276,800</td>
+                <td>8</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <td>33,638,400</td>
+                <td>4</td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <td>16,819,200</td>
+                <td>2</td>
+                <td>2030</td>
+              </tr>
+              <tr>
+                <td>8,409,600</td>
+                <td>1</td>
+                <td>2034</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>토큰 판매 일정에 대해 소식을 전달받고 싶으시다면, 하단 양식에 이메일 주소를 입력해주세요.</p>
+          {% include email_form_ko.html %}
+          <small>1: 총 발행량은 4번의 반감기를 포함한 20년간의 발행량을 나타낸 것이며, 2038년 이후에는 블록 보상이 1로 고정되어 연간 약 0.5%의 인플레이션이 발생합니다.</small>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</main>
+<footer class="main-footer text-muted">
+  <div class="container p-3 p-md-5">
+    <div class="row">
+      <div class="col-12">
+        <ul class="main-footer-links">
+          <li><a href="https://github.com/nekoyume">GitHub</a></li>
+          <li><a href="https://t.me/nekoyume">Telegram</a></li>
+          <li><a href="docs/white_paper.pdf">White Paper</a></li>
+        </ul>
+        <p>Maintained by the <a href="https://github.com/orgs/nekoyume/people">core team</a>.</p>
+        <p>Code licensed <a href="https://github.com/nekoyume/nekoyume/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>

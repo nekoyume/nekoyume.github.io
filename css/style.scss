@@ -13,6 +13,7 @@ $color-dawn-1: #45546d;
 
 * { font-family: 'SpoqaHanSans', sans-serif; }
 
+h2, h3 { line-height: 1.5; }
 p, li { line-height: 1.8; }
 
 /* Links */
@@ -158,14 +159,13 @@ video.demo {
   border-bottom-color: white;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-    display: block;
-  }
-  .nav-masthead {
-    float: right;
-  }
+.masthead-brand {
+  float: left;
+  display: block;
+}
+
+.nav-masthead {
+  float: right;
 }
 
 
@@ -249,6 +249,10 @@ video.demo {
  * Play
  */
 
+section.play {
+  background-color: $oc-gray-1;
+}
+
 .play {
   .row-hero video {
     margin-top: 62px;
@@ -302,7 +306,7 @@ video.demo {
     }
 
     h2 {
-      margin-top: 80px;
+      margin-top: 0px;
     }
   }
 
@@ -326,6 +330,67 @@ video.demo {
 
 }
 
+
+
+/*
+ * One
+ */
+
+section.hero {
+  #mc-embedded-subscribe-form {
+    .input-group-append {
+      background-color: $oc-blue-7;
+      button {
+        color: white;
+      }
+    }
+  }
+  video.hero {
+    margin-top: 62px;
+    border: 2px solid $oc-gray-3;
+    max-width: 600px;
+    width:70%;
+    position:relative;
+    top:105px;
+    margin-top: -45px;
+    margin-left: auto; margin-right: auto;
+  }
+
+  h2 {
+    @media (max-width: 48em) {
+      font-size: 22px;
+    }
+  }
+
+  .dawn-stripe-start {
+    background: url(/images/dawn-stripe-start.png);
+    background-size: cover;
+    display: block;
+    height:100px;
+    z-index:2;
+    position:relative;
+  }
+  .dawn-stripe-end {
+    background: url(/images/dawn-stripe-end.png) center;
+    background-size: cover;
+    display: block;
+    height: 100px;
+    z-index: 2;
+    position:relative;
+  }
+
+  .hero-email-form {
+    width: 480px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  @media (max-width: 48em) {
+    .hero-email-form {
+      width: 80%;
+    }
+  }
+}
 
 /*
  * Footer
