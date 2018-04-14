@@ -137,7 +137,15 @@ video.demo {
 .masthead-brand {
   font-family: 'Fredericka the Great', cursive;
   margin-bottom: 0;
-  display: none;
+  float: left;
+  display: block;
+}
+
+
+@media (max-width: 48em) {
+  .masthead-brand {
+    display: none;
+  }
 }
 
 .nav-masthead .nav-link {
@@ -162,10 +170,6 @@ video.demo {
   border-bottom-color: white;
 }
 
-.masthead-brand {
-  float: left;
-  display: block;
-}
 
 .nav-masthead {
   float: right;
